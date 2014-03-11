@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1"/>
+    <title>Multi-Touch</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+    <script src="javascripts/d3.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <style>
+        :-webkit-full-screen body {
+          height: 100%;
+        }
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        svg, .controller .backdrop {
+            width: 100%;
+            height: 100%;
+        }
+
+        .dpad {
+            fill: steelblue;
+            stroke: #000;
+            stroke-width: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="fullscreen-btn" onclick="goFullscreen();">Go Fullscreen</button>
+
+    <script src="javascripts/scripts.js"></script>
+
+</body>
+
+</html>

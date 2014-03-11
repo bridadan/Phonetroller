@@ -495,7 +495,7 @@ for (var i = 0; i < maxPlayers; i++) {
         //console.log(cmd);
         gamepadInterface.stdin.write(cmd);
     });
-    gamepadInterface.stdin.write('create\n' + i + '\n');  
+    gamepadInterface.stdin.write('create\n' + i + '\n'); 
 }
 
 gamepadInterface.stdout.on('data', function(data) {

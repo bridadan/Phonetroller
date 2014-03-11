@@ -9,6 +9,7 @@ var svg = d3.select('body')
 var controller = svg.append('g')
     .attr('class', 'controller');
 
+// EDIT BELOW LINE WITH LOCAL IP OF HOST MACHINE
 var socket = io.connect('http://10.0.0.3');
 socket.on('new-player', function (data) {
     console.log('Player Id: ' + data.id);

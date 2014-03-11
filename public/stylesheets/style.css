@@ -1,0 +1,13 @@
+body {
+	font-family: sans-serif;
+}
+
+.active {
+	opacity: 0.5;
+}
+
+text {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
